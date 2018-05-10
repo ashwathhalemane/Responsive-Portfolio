@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+:root{
+    font-size: 16px;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: Arial;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+.center{
+    text-align: center;
+    color: #000;
+}
+.home{
+    height: 100vh;
+}
+img.background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    -webkit-filter: blur(35px); /* Safari 6.0 - 9.0 */
+    filter: blur(35px);
+}
+img.circle {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 80%;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #d32626;
+}
+
+.active {
+    background-color: #d32626;
+}
+#typewriter{
+    margin-top: 15vh;
+    color: #fff;
+}
+#description{
+    margin: 5vh auto;
+}
+.a1, .b1 { 
+    float: left; 
+}
+.a1 { 
+    width: 30%;
+    height: 30vh;
+    text-align: center;
+    color: black; 
+}
+.b1 { 
+     width: 70%; 
+     height: 30vh;
+     /*text-align: center; */
+     padding: 20px;
+     color: black;
+}
+#interest{
+    margin: 0 0;
+    height: 30vh;
+}
+
+
+@media screen and (max-width: 768px) {
+    .a1 
+    { 
+        width: 100%;
+     }
+     .b1{
+        width: 100%;
+        margin-bottom: 15vh;
+     }
+}
+
+.dimension{
+    width: 320px;
+    height: 400px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/*
+.techInfo{
+    margin-top: 100px;
+}
+*/
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.zoom{
+            margin: 0 auto;
+        }
+
+.zoom:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1); 
+        }
+        
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.fontBlack{
+    color: #000;
+}
+
+/*div{
+    align-content: center;
+}*/
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+    justify-content: center;
+    
+}
+.box{
+    width:100%;
+    max-width:60%;
+    border:1px solid green;
+    margin:5px;
+}
+@media only screen and ( max-width:768px ){ 
+    .box{
+        width:100%;
+        max-width:60%;
+        border:1px solid red;
+    }
+}
+.alignment{
+    padding: 2vw;
+}
+
+#techKnown{
+    text-align: center;
+    color: #000;
+}
+.techInterest{
+    flex-wrap: wrap;
+}
+</style>
+
+</head>
+<body onload="typeWriter()">
+<div class="home">
+    <!-- <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#interest">Interest</a></li>
+      <li><a href="#eperience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>   
+ -->
+    <h1 class="center" id="typewriter"></h1>
+    <img class="background" src="ashwath.jpg" alt="dp">
+    <img class="circle" src="ashwath.jpg" alt="dp" width="450" height="50">
+    <h2 id="description">I LOVE MY BIKE, COFFEE, GUITAR AND ALL THE DOGS IN THE WORLD.</h2>
+
+</div>
+
+<div id="interest">
+
+    <div class="a1">
+        <h2>About Me</h2>
+        <h4>"The sign of intelligence is that you are constantly wondering. Idiots are always dead sure about every damn thing they are doing in their life."</h4>
+        <h4> - Sadhguru</h4>
+    </div>  
+
+    <div class="b1">
+        <p style="font-weight: bolder;">I am just a curious being with interests from farming to space.</p>
+        <p style="font-weight: bolder;">An electronics engineer by degree, bit of math geek, decent programmer who strongly understands the impact that programming has on people's life.</p>
+        <p style="font-weight: bolder;">A Game Of Thrones finatic, Marvel's fan. </p>
+    </div>
+</div>
+
+<div class="techInterest">  
+<h2 id="techKnown">Tech known</h2>
+<div class="row">
+  
+  <div class="column">
+    <div class="zoom">
+        <img class="dimension" src="java.png"> 
+    </div>
+    <p style="color: #000">Java was thought in college, as an ocean itself, is a versatile language. </p> 
+    <p style="color: #000">Having trained in core java, I've built few projects on it. </p>
+  </div>
+
+  <div class="column">
+    <div class="zoom">
+        <img class="dimension" src="android.jpg">    
+    </div>
+    <p style="color: #000">After learning Java, I started building small android apps. Also have launched few to Play store.</p>
+    
+    </div> 
+  <div class="column">
+    <div class="zoom">
+        <img class="dimension" src="python.jpg">
+    </div>
+    <p style="color: #000">Really enjoyed the simple syntax and power of Python. Used it in Numpy and Pandas libraries.</p>
+        
+  </div>
+  <div class="column">
+    <div class="zoom">
+        <img class="dimension" src="webdev.jpg">    
+    </div>
+    <p style="color: #000">On the journey of Web development. Having basics of front-end, looking forward to be complete Full-stack developer.</p>
+  </div>
+</div>
+</div>
+</div>
+<div class="center">
+    <h2>My Future Technology Plan</h2>
+</div>
+
+<div class="row"> 
+
+    <div class="column">
+    <div class="zoom">
+        <img class="dimension" src="data.png">    
+    </div>
+    <p style="color: #000">Data science is a fascinating field of finding meaning in data and utilizing them to improve business. I am willing to pursue Data Science in my Master's degree. </p>
+  </div>
+
+  <div class="column">
+    <div class="zoom">
+        <img class="dimension" src="game.jpg"> 
+    </div>
+    <p style="color: #000">Game development exposes creative mind and involves critical physical assumptions of objects.</p> 
+    
+  </div>
+  <div class="column">
+    <div class="zoom">
+        <img class="dimension" src="os.png">    
+    </div>
+    <p style="color: #000">Once having enough skills, I am interested in working in OS level, where architects are designed and implemented.</p>
+    
+    </div> 
+  <div class="column">
+    <div class="zoom">
+        <img class="dimension" src="ai.jpeg">
+    </div>
+    <p style="color: #000">Though not having much idea about AI, this is the way forward. Hoping to master it and implement in all aspects of computing. </p>
+        
+  </div>
+</div>
+
+<div class="center">
+    <h2>Experience</h2>
+</div> 
+
+<section class="container">
+    <div class="box">
+        <h2 class="fontBlack">CGI group Inc, </h2>
+        <h1 class="fontBlack">Junior Developer, June 2017 - present</h1>
+        <p class="fontBlack alignment"  style="font-weight: bolder;">Worked as Junior Developer, involved in developing java projects, not from scratch, bug fixes and minor development. 
+        Learnt to debug various issues and also fixed them under timeline provided. Also did test automation in the process and have knowledge on Selenium and Robot framework. Attended several workshops and webinars about Spring, Hibernate and related technologies. Later got interested in Full stack development and pursuing this course.</p>
+    </div>
+</section>
+
+
+<section class="container">
+    <div class="box">
+
+    <h2 class="center">Projects</h2>
+
+    <div class="fontBlack">
+        <h4>1. Image gallery and start-up landing page: HTML, CSS, Bootstrap.</h4>
+        <h4>2. Color game: JavaScript. A color guessing game which is displayed in RGB format.</h4>
+        <h4>3. Ketto.org replicated index page.</h4>
+        <h4>4. My Responsive Portfolio.</h4>
+    </div>
+
+        
+    </div>
+</section>
+
+
+
+<script type="text/javascript">
+    var i=0;
+    var txt="ASHWATH HALEMANE"
+    var speed= 150
+
+    function typeWriter(){
+        if(i< txt.length){
+            document.getElementById("typewriter").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+</body>
+</html>

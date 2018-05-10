@@ -1,0 +1,204 @@
+
+* {
+    box-sizing: border-box;
+}
+:root{
+    font-size: 16px;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: Arial;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+.center{
+    text-align: center;
+    color: #000;
+}
+.home{
+    height: 100vh;
+}
+img.background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    -webkit-filter: blur(35px); /* Safari 6.0 - 9.0 */
+    filter: blur(35px);
+}
+img.circle {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 80%;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #d32626;
+}
+
+.active {
+    background-color: #d32626;
+}
+#typewriter{
+    margin-top: 15vh;
+    color: #fff;
+}
+#description{
+    margin: 5vh auto;
+}
+.a1, .b1 { 
+    float: left; 
+}
+.a1 { 
+    width: 30%;
+    height: 30vh;
+    text-align: center;
+    color: black; 
+}
+.b1 { 
+     width: 70%; 
+     height: 30vh;
+     /*text-align: center; */
+     padding: 20px;
+     color: black;
+}
+#interest{
+    margin: 0 0;
+    height: 30vh;
+}
+
+
+@media screen and (max-width: 768px) {
+    .a1 
+    { 
+        width: 100%;
+     }
+     .b1{
+        width: 100%;
+        margin-bottom: 15vh;
+     }
+}
+
+.dimension{
+    width: 320px;
+    height: 400px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/*
+.techInfo{
+    margin-top: 100px;
+}
+*/
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.zoom{
+            margin: 0 auto;
+        }
+
+.zoom:hover {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari 3-8 */
+            transform: scale(1.1); 
+        }
+        
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.fontBlack{
+    color: #000;
+}
+
+/*div{
+    align-content: center;
+}*/
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:center;
+    justify-content: center;
+    
+}
+.box{
+    width:100%;
+    max-width:60%;
+    border:1px solid green;
+    margin:5px;
+}
+@media only screen and ( max-width:768px ){ 
+    .box{
+        width:100%;
+        max-width:60%;
+        border:1px solid red;
+    }
+}
+.alignment{
+    padding: 2vw;
+}
+
+#techKnown{
+    text-align: center;
+    color: #000;
+}
+.techInterest{
+    flex-wrap: wrap;
+}
